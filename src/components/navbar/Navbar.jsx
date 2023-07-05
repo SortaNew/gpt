@@ -15,7 +15,7 @@ const Menu = () =>(
   </>
 )
 
-const Navbar = () => {
+const Navbar = ({dkmode}) => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
@@ -27,6 +27,7 @@ const Navbar = () => {
           <div className="gpt3__navbar-links_container">
             <Menu/>
           </div>
+          <div className="gpt3__navbar-links_container"></div>
         </div>
         <div className="gpt3__navbar-sign">
           <p>Sign in</p>
